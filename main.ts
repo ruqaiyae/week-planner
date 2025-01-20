@@ -1,3 +1,9 @@
+// interface Entry {
+//   time: string;
+//   day: string;
+//   eventInfo: string;
+// }
+
 const $select = document.querySelector('.select');
 if (!$select) throw new Error('$select query failed!');
 
@@ -18,3 +24,17 @@ if (!$dialog) throw new Error('$dialog query failed');
 $newEvent.addEventListener('click', () => {
   $dialog.showModal();
 });
+
+const $cancelBtn = document.querySelector('.cancel-btn');
+const $confirmBtn = document.querySelector('.confirm-btn');
+
+if (!$cancelBtn) throw new Error('$cancelBtn query failed.');
+if (!$confirmBtn) throw new Error('$confirmBtn query failed.');
+
+$cancelBtn.addEventListener('click', () => {
+  $dialog.close();
+});
+
+// $confirmBtn.addEventListener('click' () => {
+
+// })

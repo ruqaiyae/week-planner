@@ -13,3 +13,12 @@ if (!$dialog) throw new Error('$dialog query failed');
 $newEvent.addEventListener('click', function () {
   $dialog.showModal();
 });
+var $cancelBtn = document.querySelector('.cancel-btn');
+var $confirmBtn = document.querySelector('.confirm-btn');
+if (!$cancelBtn) throw new Error('$cancelBtn query failed.');
+if (!$confirmBtn) throw new Error('$confirmBtn query failed.');
+$cancelBtn.addEventListener('click', function () {
+  $dialog.close();
+});
+// $confirmBtn.addEventListener('click' () => {
+// })

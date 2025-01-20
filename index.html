@@ -9,16 +9,16 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="full-column">
+        <div class="full-column center">
           <h1>Weekly Planner</h1>
         </div>
       </div>
       <div class="row">
-        <div class="full-column">
+        <div class="full-column center">
           <h2>Choose Day to Show Events</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row center">
         <div class="full-column">
           <form>
             <label for="day-week" class="full-column">Day of Week</label>
@@ -32,99 +32,102 @@
               <option value="Sunday">Sunday</option>
             </select>
           </form>
-          <div class="row">
-            <div class="full-column">
-              <button type="button" class="new-event">Add New Event</button>
-              <dialog>
-                <form>
-                  <label for="time"> Time of event </label>
-                  <select id="time" class="select">
-                    <option value="default">Select a time</option>
-                  </select>
-                  <label for="day"> Day of the week </label>
-                  <select id="day">
-                    <option value="Monday">Monday</option>
-                    <option value="Tuesday">Tuesday</option>
-                    <option value="Wednesday">Wednesday</option>
-                    <option value="Thursday">Thursday</option>
-                    <option value="Friday">Friday</option>
-                    <option value="Saturday">Saturday</option>
-                    <option value="Sunday">Sunday</option>
-                  </select>
-                  <label for="comment"> Comment </label>
-                  <textarea id="comment" rows="10" cols="20"></textarea>
-                  <div class="btn-container">
-                    <button type="button" class="cancel-btn">Cancel</button>
-                    <button type="submit" class="confirm-btn">Confirm</button>
-                  </div>
-                </form>
-              </dialog>
-            </div>
-          </div>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Time</th>
-                <th>Event</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
+      <div class="row">
+        <div class="full-column center">
+          <button type="button" class="new-event">Add New Event</button>
+          <dialog>
+            <form>
+              <div class="dialog-container">
+                <label for="time"> Time of event: </label>
+                <select id="time" class="select">
+                  <option value="default">Select a time</option>
+                </select>
+                <label for="day"> Day of the week: </label>
+                <select id="day" class="select">
+                  <option value="Monday">Monday</option>
+                  <option value="Tuesday">Tuesday</option>
+                  <option value="Wednesday">Wednesday</option>
+                  <option value="Thursday">Thursday</option>
+                  <option value="Friday">Friday</option>
+                  <option value="Saturday">Saturday</option>
+                  <option value="Sunday">Sunday</option>
+                </select>
+                <label for="comment"> Event Information: </label>
+                <textarea id="comment" rows="10" cols="20"></textarea>
+              </div>
+              <div class="btn-container">
+                <button type="button" class="cancel-btn">Cancel</button>
+                <button type="submit" class="confirm-btn">Confirm</button>
+              </div>
+            </form>
+          </dialog>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Event</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+    <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

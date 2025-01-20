@@ -9,12 +9,10 @@ body {
 
 .row {
   display: flex;
-  justify-content: center;
 }
 
 .full-column {
   flex-basis: 100%;
-  text-align: center;
 }
 
 label {
@@ -58,4 +56,16 @@ tr:nth-child(odd) {
 
 .confirm-btn {
   background-color: green;
+}
+
+.center {
+  text-align: center;
+}
+
+.dialog-container {
+  text-align: left;
+}
+
+.select {
+  width: 100%;
 }
