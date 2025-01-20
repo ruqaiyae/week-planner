@@ -1,21 +1,21 @@
-// interface Data {
-//   entries: Entry[];
-//   editing: Entry | null;
-//   status: boolean;
-// }
+interface Data {
+  entries: Entry[];
+  editing: Entry | null;
+  status: boolean;
+}
 
-// // const data = readData();
+const data = readData();
 
-// // function writeData(): undefined {
-//   // const dataJSON = JSON.stringify(data);
-//  // localStorage.setItem('data-storage', dataJSON);
-// // }
+function writeData(): undefined {
+  const dataJSON = JSON.stringify(data);
+  localStorage.setItem('data-storage', dataJSON);
+}
 
-// // function readData(): Data[] {
-//   // if (localStorage.getItem('data-storage')) {
-//     // const parsedJSON = JSON.parse(localStorage.getItem('data-storage') || '[]');
-//      // return parsedJSON;
-//   // } else {
-//  //    return [];
-// //  }
-// //  }
+function readData(): Data[] {
+  if (localStorage.getItem('data-storage')) {
+    const parsedJSON = JSON.parse(localStorage.getItem('data-storage') || '[]');
+    return parsedJSON;
+  } else {
+    return [];
+  }
+}

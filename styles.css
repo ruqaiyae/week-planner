@@ -50,6 +50,14 @@ tr:nth-child(odd) {
   justify-content: space-around;
 }
 
+.dialog-btn {
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+
 .cancel-btn {
   background-color: grey;
 }
@@ -68,4 +76,9 @@ tr:nth-child(odd) {
 
 .select {
   width: 100%;
+}
+
+select {
+  padding: 5px;
+  font-size: 0.9rem;
 }
