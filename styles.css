@@ -9,6 +9,7 @@ body {
 
 .row {
   display: flex;
+  justify-content: center;
 }
 
 .full-column {

@@ -9,13 +9,32 @@
   <body>
     <div class="container">
       <div class="row">
-        <h1 class="full-column">Weekly Planner</h1>
+        <div class="full-column">
+          <h1>Weekly Planner</h1>
+        </div>
       </div>
       <div class="row">
-        <h2 class="full-column">Choose Day to Show Events</h2>
+        <div class="full-column">
+          <h2>Choose Day to Show Events</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="full-column">
+          <form>
+            <label for="day-week" class="full-column">Day of Week</label>
+            <select name="week" id="day-week">
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+              <option value="Sunday">Sunday</option>
+            </select>
+          </form>
+        </div>
       </div>
     </div>
-
     <script src="main.js"></script>
   </body>
 </html>
