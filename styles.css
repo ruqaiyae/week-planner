@@ -16,3 +16,31 @@ body {
   flex-basis: 100%;
   text-align: center;
 }
+
+label {
+  display: block;
+}
+
+.new-event {
+  margin-top: 5rem;
+  background-color: grey;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 10px;
+}
+
+.table {
+  width: 100%;
+  margin-top: 5rem;
+  border: solid;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+tr:nth-child(odd) {
+  background-color: grey;
+}
