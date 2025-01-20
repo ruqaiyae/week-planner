@@ -35,7 +35,25 @@
           <div class="row">
             <div class="full-column">
               <button type="button" class="new-event">Add New Event</button>
-              <dialog></dialog>
+              <dialog>
+                <form>
+                  <label for="time"> Time of event </label>
+                  <select id="time" class="select">
+                    <option value="default">Select a time</option>
+                  </select>
+                  <label for="day"> Day of the week </label>
+                  <select id="day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                  </select>
+                  <label for="comment"> Comment </label>
+                </form>
+              </dialog>
             </div>
           </div>
           <table class="table">

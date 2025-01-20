@@ -31,9 +31,10 @@ label {
 }
 
 .table {
-  width: 100%;
-  margin-top: 5rem;
-  border: solid;
+  width: 60%;
+  margin: 5rem auto;
+  border: solid lightgrey;
+  border-collapse: collapse;
 }
 
 th,
@@ -42,5 +43,5 @@ td {
 }
 
 tr:nth-child(odd) {
-  background-color: grey;
+  background-color: lightgrey;
 }
