@@ -19,6 +19,7 @@ body {
 
 label {
   display: block;
+  margin-top: 0.75rem;
 }
 
 .new-event {
@@ -44,4 +45,17 @@ td {
 
 tr:nth-child(odd) {
   background-color: lightgrey;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cancel-btn {
+  background-color: grey;
+}
+
+.confirm-btn {
+  background-color: green;
 }
