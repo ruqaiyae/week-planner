@@ -13,7 +13,8 @@ interface Entry {
 const $select = document.querySelector('.select');
 if (!$select) throw new Error('$select query failed!');
 
-for (let i = 0; i < 25; i++) {
+for (let i = 0; i < 25; i++)
+{
   const $option = document.createElement('option');
   $option.setAttribute('value', String(i));
   $option.textContent = `${String(i)}:00`;
@@ -29,6 +30,9 @@ if (!$dialog) throw new Error('$dialog query failed');
 
 $newEvent.addEventListener('click', () => {
   $dialog.showModal();
+
+
+
 });
 
 const $cancelBtn = document.querySelector('.cancel-btn');
@@ -37,8 +41,7 @@ const $entryForm = document.querySelector('.entry-form') as HTMLFormElement;
 if (!$cancelBtn) throw new Error('$cancelBtn query failed.');
 if (!$entryForm) throw new Error('$entryForm query failed.');
 
-const $timeInput = document.querySelector('#time') as HTMLSelectElement;
-if (!$timeInput) throw new Error('timeInput query failed');
+
 
 $cancelBtn.addEventListener('click', () => {
   $dialog.close();
@@ -46,6 +49,16 @@ $cancelBtn.addEventListener('click', () => {
 
 $entryForm.addEventListener('submit', (event: Event) => {
   event.preventDefault();
+  const entry:Entry = {
+    time:$entryForm.time.value,
+    day:$entryForm.day.value,
+    eventInfo: $entryForm.comment.value
+  };
+  // console.log(entry);
+
+  data.entries.unshift(entry);
+  writeData();
+  $dialog.close();
+
+
 });
-console.log('$entryForm: ', $entryForm.elements);
-console.log('$timeInput', $timeInput.value);

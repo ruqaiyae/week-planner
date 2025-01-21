@@ -9,6 +9,6 @@ function readData() {
         return parsedJSON;
     }
     else {
-        return [];
+        return { entries: [], editing: null };
     }
 }

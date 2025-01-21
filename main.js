@@ -22,14 +22,18 @@ if (!$cancelBtn)
     throw new Error('$cancelBtn query failed.');
 if (!$entryForm)
     throw new Error('$entryForm query failed.');
-var $timeInput = document.querySelector('#time');
-if (!$timeInput)
-    throw new Error('timeInput query failed');
 $cancelBtn.addEventListener('click', function () {
     $dialog.close();
 });
 $entryForm.addEventListener('submit', function (event) {
     event.preventDefault();
+    var entry = {
+        time: $entryForm.time.value,
+        day: $entryForm.day.value,
+        eventInfo: $entryForm.comment.value
+    };
+    // console.log(entry);
+    data.entries.unshift(entry);
+    writeData();
+    $dialog.close();
 });
-console.log('$entryForm: ', $entryForm.elements);
-console.log('$timeInput', $timeInput.value);
